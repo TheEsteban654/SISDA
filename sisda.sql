@@ -16,7 +16,7 @@ SET time_zone = "+00:00";
 --  tabla administador
 --
 
-CREATE TABLE `administrador` (
+CREATE TABLE `administrr` (
   `id_administrador` int(11) NOT NULL,
   `Cargo` varchar(50) NOT NULL,
   `Area` varchar(50) NOT NULL
