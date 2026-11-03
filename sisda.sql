@@ -12,19 +12,8 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de datos: `sisda`
---
-
 -- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `administrador`
+--  tabla administrador
 --
 
 CREATE TABLE `administrador` (
@@ -35,8 +24,7 @@ CREATE TABLE `administrador` (
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `asistencia`
+-- tabla asistencia
 --
 
 CREATE TABLE `asistencia` (
@@ -48,7 +36,7 @@ CREATE TABLE `asistencia` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `boletin`
+-- tabla boletin
 --
 
 CREATE TABLE `boletin` (
@@ -59,8 +47,7 @@ CREATE TABLE `boletin` (
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `chat`
+--  tabla chat
 --
 
 CREATE TABLE `chat` (
@@ -73,8 +60,7 @@ CREATE TABLE `chat` (
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `circulares`
+--  tabla circulares
 --
 
 CREATE TABLE `circulares` (
@@ -86,7 +72,7 @@ CREATE TABLE `circulares` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `curso`
+--  tabla curso
 --
 
 CREATE TABLE `curso` (
@@ -97,7 +83,7 @@ CREATE TABLE `curso` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `estudiante`
+--  tabla estudiante
 --
 
 CREATE TABLE `estudiante` (
@@ -109,7 +95,7 @@ CREATE TABLE `estudiante` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `guias`
+--  tabla guias
 --
 
 CREATE TABLE `guias` (
@@ -121,7 +107,7 @@ CREATE TABLE `guias` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `horarios`
+-- tabla horarios
 --
 
 CREATE TABLE `horarios` (
@@ -133,7 +119,7 @@ CREATE TABLE `horarios` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `materia`
+--  tabla materia
 --
 
 CREATE TABLE `materia` (
@@ -144,7 +130,7 @@ CREATE TABLE `materia` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `observaciones`
+-- tabla observaciones
 --
 
 CREATE TABLE `observaciones` (
@@ -156,7 +142,7 @@ CREATE TABLE `observaciones` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `padre_familia`
+-- tabla padre_familia
 --
 
 CREATE TABLE `padre_familia` (
@@ -168,7 +154,7 @@ CREATE TABLE `padre_familia` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `profesores`
+-- tabla profesores
 --
 
 CREATE TABLE `profesores` (
@@ -180,7 +166,7 @@ CREATE TABLE `profesores` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+--  tabla usuarios
 --
 
 CREATE TABLE `usuarios` (
@@ -193,51 +179,33 @@ CREATE TABLE `usuarios` (
   `rol` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Índices para tablas volcadas
---
 
---
--- Indices de la tabla `administrador`
 --
 ALTER TABLE `administrador`
   ADD PRIMARY KEY (`id_administrador`);
 
 --
--- Indices de la tabla `asistencia`
---
 ALTER TABLE `asistencia`
   ADD PRIMARY KEY (`id_asistencia`);
 
---
--- Indices de la tabla `usuarios`
+
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT de las tablas volcadas
---
 
---
--- AUTO_INCREMENT de la tabla `administrador`
 --
 ALTER TABLE `administrador`
   MODIFY `id_administrador` int(11) NOT NULL AUTO_INCREMENT;
 
---
--- AUTO_INCREMENT de la tabla `asistencia`
+
 --
 ALTER TABLE `asistencia`
   MODIFY `id_asistencia` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
---
 ALTER TABLE `usuarios`
   MODIFY `id` int(15) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
