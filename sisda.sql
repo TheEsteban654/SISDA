@@ -13,7 +13,7 @@ SET time_zone = "+00:00";
 
 
 -- --------------------------------------------------------
---  tabla administrador
+--  tabla 
 --
 
 CREATE TABLE `administrador` (
