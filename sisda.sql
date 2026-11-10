@@ -171,12 +171,12 @@ CREATE TABLE `profesores` (
 
 CREATE TABLE `usuarios` (
   `id` int(15) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apellido` varchar(50) NOT NULL,
-  `correo_institucional` varchar(50) NOT NULL,
-  `celular` varchar(30) NOT NULL,
-  `documento` varchar(20) NOT NULL,
-  `rol` varchar(15) NOT NULL
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `correo_institucional` varchar(100) NOT NULL,
+  `celular` varchar(100) NOT NULL,
+  `documento` varchar(100) NOT NULL,
+  `rol` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
