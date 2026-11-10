@@ -167,7 +167,6 @@ CREATE TABLE `profesores` (
 
 --
 --  tabla usuarios
---
 
 CREATE TABLE `usuarios` (
   `id` int(15) NOT NULL,
