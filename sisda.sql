@@ -158,7 +158,7 @@ CREATE TABLE `padre_familia` (
 --
 
 CREATE TABLE `profesores` (
-  `materia` varchar(15) NOT NULL,
+  `materia` varchar(20) NOT NULL,
   `CorreoPersonal` varchar(50) NOT NULL,
   `CursosAsignados` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -167,6 +167,7 @@ CREATE TABLE `profesores` (
 
 --
 --  tabla usuarios
+
 
 CREATE TABLE `usuarios` (
   `id` int(15) NOT NULL,
